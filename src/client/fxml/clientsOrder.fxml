@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #171833;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ClientsOrderController">
+   <children>
+      <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: #ff2121;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="18.0" prefHeight="55.0" prefWidth="215.0" text="Bakerbun" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold Italic" size="48.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.2952380952380953">
+                     <stops>
+                        <Stop color="#3c2e72" />
+                        <Stop color="#03064d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="stewardOrderTable" layoutX="318.0" layoutY="150.0" prefHeight="400.0" prefWidth="742.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="30.0" text="№" />
+            <TableColumn fx:id="nameColumn" prefWidth="183.0" text="Имя" />
+            <TableColumn fx:id="tableColumn" prefWidth="91.0" text="Столик" />
+            <TableColumn fx:id="dishColumn" prefWidth="183.0" text="Блюдо" />
+            <TableColumn fx:id="amountColumn" prefWidth="119.0" text="Количество" />
+            <TableColumn fx:id="statusColumn" prefWidth="136.0" text="Статус" />
+         </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="318.0" layoutY="104.0" maxHeight="30.0" maxWidth="270.0" prefHeight="30.0" prefWidth="200.0" promptText="Поиск по имени">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Harrington" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="backButton" layoutX="1086.0" layoutY="652.0" mnemonicParsing="false" onAction="#back" prefWidth="100.0" text="Назад">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="doneB" layoutX="1086.0" layoutY="249.0" mnemonicParsing="false" onAction="#done" prefWidth="100.0" text="Подано">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="dish" layoutX="1086.0" layoutY="150.0" prefHeight="33.0" prefWidth="100.0" promptText="№">
+         <font>
+            <Font name="Harrington" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="status" layoutX="1086.0" layoutY="201.0" prefHeight="33.0" prefWidth="100.0" text="Подано">
+         <font>
+            <Font name="Harrington" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TableView fx:id="accountTable" layoutX="14.0" layoutY="151.0" prefHeight="398.0" prefWidth="267.0">
+         <columns>
+            <TableColumn fx:id="dishcostColumn" minWidth="0.0" prefWidth="141.0" text="Блюдо" />
+            <TableColumn fx:id="costColumn" prefWidth="126.0" text="Стоимость" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

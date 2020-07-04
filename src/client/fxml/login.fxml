@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #171833;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.LoginController">
+   <children>
+      <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: #ff2121;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="18.0" prefHeight="55.0" prefWidth="215.0" text="Bakerbun" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold Italic" size="48.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.2952380952380953">
+                     <stops>
+                        <Stop color="#3c2e72" />
+                        <Stop color="#03064d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="adminButton" layoutX="494.0" layoutY="279.0" mnemonicParsing="false" onAction="#adminButt" prefHeight="44.0" prefWidth="215.0" text="Администратор" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.25" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+      </Button>
+      <Button fx:id="stewardButton" layoutX="494.0" layoutY="379.0" mnemonicParsing="false" onAction="#stewardButt" prefHeight="44.0" prefWidth="215.0" text="Официант" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.25" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+      </Button>
+      <Button fx:id="clientButton" layoutX="494.0" layoutY="479.0" mnemonicParsing="false" onAction="#clientButt" prefHeight="44.0" prefWidth="215.0" text="Клиент" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.25" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+      </Button>
+      <Label alignment="CENTER" layoutX="424.0" layoutY="139.0" prefHeight="63.0" prefWidth="352.0" text="Авторизация" textAlignment="CENTER" textFill="#ff9191" wrapText="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="54.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

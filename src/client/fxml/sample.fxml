@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #171833;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.SampleController">
+    <children>
+      <Label alignment="CENTER" layoutX="198.0" layoutY="169.0" prefHeight="181.0" prefWidth="804.0" text="Добро пожаловать в информационную систему ресторана &quot;Bakerbun&quot;. Для дальнейшей работы авторизируйтесь в системе." textAlignment="CENTER" textFill="#ff9191" wrapText="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: #ff2121;">
+         <children>
+              <Button fx:id="loginButton" layoutX="1017.0" layoutY="29.0" mnemonicParsing="false" onAction="#loginButt" prefHeight="34.0" prefWidth="169.0" text="Авторизироваться" textAlignment="CENTER" wrapText="true">
+                  <font>
+                      <Font name="Calibri" size="18.0" />
+                  </font>
+                  <effect>
+                      <InnerShadow choke="0.25" height="20.0" radius="9.5" width="20.0" />
+                  </effect>
+              </Button>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="18.0" prefHeight="55.0" prefWidth="215.0" text="Bakerbun" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold Italic" size="48.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.2952380952380953">
+                     <stops>
+                        <Stop color="#3c2e72" />
+                        <Stop color="#03064d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="309.0" layoutY="409.0" prefHeight="181.0" prefWidth="582.0" text="Наш адрес: ул. Независимости 45 Время работы: 10.00-22.00" textAlignment="CENTER" textFill="#ff9191" wrapText="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
